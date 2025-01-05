@@ -12,7 +12,7 @@ class Student(db.Model):  # Inherit from db.Model
     class_name = db.Column(db.String(60))  # Class name
     admitted_at = db.Column(db.DateTime, default=datetime.now)  # Default value for datetime
     
-    def __init__(self, name, email, class_name, class_roll, address):
+    def __init__(self, name, email, class_name):
         self.name = name
         self.email = email
         self.class_name = class_name
