@@ -24,7 +24,7 @@ This should display information about the Flask package.
 
 To avoid conflicts between different projects, it’s a good idea to create a virtual environment for your project: 1. Create a virtual environment:
 
-            python -m venv venv
+            python -m venv .venv
 
 (Use python3 if you’re using Python 3.)
 
@@ -32,7 +32,7 @@ To avoid conflicts between different projects, it’s a good idea to create a vi
 
 • On macOS/Linux:
 
-        source venv/bin/activate
+        source .venv/bin/activate
 
 • On Windows:
 
@@ -57,5 +57,15 @@ If the issue persists, let me know!
 # 6. install postman
 
         brew install --cask postman
+
 # 7. instal Flask migrate
+
         pip install Flask-Migrate
+
+# for my macbook
+
+### I follow bellow procedure
+
+         python -m venv .venv
+         source .venv/bin/activate
+         pip install -r requirements.txt
